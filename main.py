@@ -116,6 +116,15 @@ async def leaderboard():
         return {"error": "Failed to fetch leaderboard", "details": str(e)}
 
 
+@app.get("/demo", response_class=HTMLResponse)
+async def demo_page():
+    """Serve the demo showcase page."""
+    try:
+        with open("static/demo.html", "r") as f:
+            return HTMLResponse(content=f.read())
+    except Exception as e:
+        return HTMLResponse(content=f"<h1>Demo not available</h1><p>{str(e)}</p>", status_code=500)
+
 @app.get("/leaderboard", response_class=HTMLResponse)
 async def leaderboard_page():
     """Serve the leaderboard page."""

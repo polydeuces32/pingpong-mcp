@@ -2,6 +2,49 @@
 
 A modern, responsive ping pong game built with Pure HTML5 Canvas and FastAPI.
 
+## Demo
+
+### Live Demo
+- **Play Game**: `http://localhost:8000/` - Full ping pong game
+- **Feature Demo**: `http://localhost:8000/demo` - Interactive showcase of all features
+- **Leaderboard**: `http://localhost:8000/leaderboard` - Player statistics
+- **GitHub**: [https://github.com/polydeuces32/pingpong-mcp](https://github.com/polydeuces32/pingpong-mcp)
+
+### Key Features Showcase
+
+**Pure HTML5 Canvas Gameplay**
+- Smooth 60fps gameplay with realistic physics
+- Ball speed increases on each hit for dynamic gameplay
+- Responsive controls: W/S for left paddle, Arrow keys for right paddle
+
+**AI Opponent System**
+- 3 difficulty levels: Easy, Medium, Hard
+- Intelligent ball prediction and movement
+- Toggle between AI and manual control
+
+**Game Modes**
+- First to 5 points
+- First to 10 points  
+- Best of 3 games
+
+**Audio Experience**
+- Atmospheric boom sound effects
+- Continuous low-frequency ambient sounds
+- Periodic deep booms every 8-15 seconds
+- Toggle sound on/off with M key
+
+**Competitive Features**
+- Player name customization
+- Persistent score tracking with SQLite database
+- Live leaderboard with win rates and statistics
+- Match history and sats rewards
+
+**Modern UI**
+- Professional gradient design
+- Glowing ball and paddle effects
+- Responsive design for all screen sizes
+- Game timer and status indicators
+
 ## Features
 
 ### Core Gameplay
